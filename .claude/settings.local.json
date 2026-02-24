@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf dist && npm run build 2>&1)",
+      "Bash(which serve 2>/dev/null || npx serve --version 2>/dev/null | head -1 || echo \"no serve\")"
+    ]
+  }
+}

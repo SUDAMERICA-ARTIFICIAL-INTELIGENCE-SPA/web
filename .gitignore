@@ -1,0 +1,17 @@
+.vercel
+node_modules/
+dist/
+dist-cta/
+dist-faq/
+dist-features/
+dist-hero/
+dist-howitworks/
+dist-logomarquee/
+dist-pricing/
+dist-problem/
+dist-testimonials/
+respaldo2402/
+new21dev/
+.env
+.env.local
+*.local
