@@ -36,14 +36,14 @@ const partnerLogos = [
 
 export default function IntegrationHero() {
   return (
-    <section className="relative pt-0 pb-16 overflow-hidden bg-white dark:bg-black">
+    <section className="relative pt-0 pb-16 overflow-hidden bg-transparent">
       {/* Grid background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0.04)_1px,transparent_1px)] [background-size:24px_24px]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06)_1px,transparent_1px)] [background-size:24px_24px]" />
 
       {/* Animated logo carousel */}
       <div className="relative">
         <AnimatedCarousel
-          title="Powering the Web"
+          title="Empresas que confían en Sudaméria AI"
           logos={partnerLogos.map((l) => l.src)}
           autoPlay={true}
           autoPlayInterval={4000}

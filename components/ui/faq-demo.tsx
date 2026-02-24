@@ -1,99 +1,60 @@
 import { FAQ } from "@/components/ui/faq-tabs";
 
 const categories = {
-  "web-dev": "Web Development",
-  "mobile-dev": "Mobile Development",
-  "ui-ux": "UI/UX Design",
-  "copywriting": "Copywriting",
+  automatizacion: "Automatización",
+  precios: "Precios y garantía",
+  tecnologia: "Tecnología",
 };
 
 const faqData = {
-  "web-dev": [
+  automatizacion: [
     {
-      question: "What is web development?",
-      answer: "Web development is the process of building and maintaining websites. It involves a combination of client-side and server-side programming, database management, and other web-related technologies.",
+      question: "¿Qué tipo de procesos puedo automatizar?",
+      answer:
+        "Ventas, seguimiento comercial, atención al cliente, tareas administrativas y reportes operativos.",
     },
     {
-      question: "What programming languages are essential for web development?",
-      answer: "Essential languages for web development include HTML, CSS, and JavaScript for front-end development. For back-end development, popular languages include Python, Ruby, PHP, Java, and Node.js.",
+      question: "¿Necesito conocimientos técnicos?",
+      answer:
+        "No. Sudaméria AI está diseñada para dueños, administradores y equipos no técnicos.",
     },
     {
-      question: "What's the difference between front-end and back-end development?",
-      answer: "Front-end development focuses on the user interface and user experience of a website, while back-end development deals with server-side logic, databases, and application integration.",
-    },
-    {
-      question: "How long does it typically take to develop a website?",
-      answer: "The time to develop a website can vary greatly depending on its complexity. A simple static website might take a few days, while a complex web application could take several months or even years.",
-    },
-    {
-      question: "What is responsive web design?",
-      answer: "Responsive web design is an approach to web design that makes web pages render well on a variety of devices and window or screen sizes. It ensures that websites are accessible and visually appealing across different platforms.",
+      question: "¿Funciona para pymes y microempresas?",
+      answer:
+        "Sí. Nuestro enfoque es democratizar la automatización con planes accesibles y acompañamiento.",
     },
   ],
-  "mobile-dev": [
+  precios: [
     {
-      question: "What is mobile development?",
-      answer: "Mobile development is the process of creating software applications that run on mobile devices such as smartphones and tablets. It involves designing, coding, and testing applications for mobile operating systems like iOS and Android.",
+      question: "¿Tienen prueba gratis?",
+      answer: "Sí, ofrecemos 7 días de prueba para validar resultados sin riesgo.",
     },
     {
-      question: "What's the difference between native and cross-platform mobile development?",
-      answer: "Native development involves building separate apps for each platform using platform-specific languages (Swift for iOS, Java/Kotlin for Android). Cross-platform development uses frameworks like React Native or Flutter to build a single codebase that works on multiple platforms.",
+      question: "¿Hay garantía de satisfacción?",
+      answer:
+        "Sí. Si no quedas satisfecho, puedes solicitar reembolso dentro del periodo acordado.",
     },
     {
-      question: "What are some popular mobile app development frameworks?",
-      answer: "Popular mobile app development frameworks include React Native, Flutter, Xamarin, Ionic, and NativeScript. Each has its own strengths and is suited for different types of projects.",
-    },
-    {
-      question: "How do you ensure mobile app security?",
-      answer: "Mobile app security involves practices such as secure coding, data encryption, secure authentication methods, regular security audits, and staying up-to-date with the latest security patches and best practices.",
-    },
-    {
-      question: "What is the typical mobile app development lifecycle?",
-      answer: "The typical mobile app development lifecycle includes stages such as planning, design, development, testing, deployment, and maintenance. It often follows an iterative process with continuous updates and improvements.",
+      question: "¿Puedo cambiar de plan?",
+      answer:
+        "Sí. Puedes escalar al plan profesional o solicitar plan a medida cuando lo necesites.",
     },
   ],
-  "ui-ux": [
+  tecnologia: [
     {
-      question: "What is UI/UX design?",
-      answer: "UI (User Interface) design focuses on the visual elements of a digital product, while UX (User Experience) design deals with the overall feel and functionality of the product. Together, they aim to create products that are both visually appealing and easy to use.",
+      question: "¿Incluye CRM y ERP con IA?",
+      answer:
+        "Sí, integramos CRM, ERP y agentes de IA según la operación específica de tu negocio.",
     },
     {
-      question: "What's the difference between UI and UX design?",
-      answer: "UI design focuses on the look and layout of a product's interface, including colors, typography, and visual elements. UX design is broader, encompassing the entire user journey and how users interact with the product.",
+      question: "¿Qué integraciones soportan?",
+      answer:
+        "Integramos herramientas existentes y conectores a medida para que no pierdas tus sistemas actuales.",
     },
     {
-      question: "What tools do UI/UX designers commonly use?",
-      answer: "Common tools for UI/UX design include Sketch, Figma, Adobe XD, InVision, and Protopie for design and prototyping. Research and testing tools might include UserTesting, Hotjar, and Optimal Workshop.",
-    },
-    {
-      question: "What is a user persona?",
-      answer: "A user persona is a fictional representation of your ideal user or customer. It's based on user research and includes details about the persona's background, goals, challenges, and behaviors. Personas help guide design decisions by keeping the focus on the end-user.",
-    },
-    {
-      question: "What is the importance of user testing in UI/UX design?",
-      answer: "User testing is crucial in UI/UX design as it provides direct feedback from actual users. It helps identify usability issues, validate design decisions, and ensure that the product meets user needs and expectations.",
-    },
-  ],
-  "copywriting": [
-    {
-      question: "What is copywriting?",
-      answer: "Copywriting is the act of writing text for the purpose of advertising or other forms of marketing. The product, called copy, is written content that aims to increase brand awareness and ultimately persuade a person or group to take a particular action.",
-    },
-    {
-      question: "What's the difference between copywriting and content writing?",
-      answer: "While both involve writing, copywriting is specifically aimed at persuasion and driving action (like making a purchase), while content writing is more focused on informing, educating, or entertaining the reader.",
-    },
-    {
-      question: "What are some key elements of effective copywriting?",
-      answer: "Key elements of effective copywriting include understanding the target audience, crafting compelling headlines, focusing on benefits rather than features, using persuasive language, and including a clear call-to-action.",
-    },
-    {
-      question: "How important is SEO in copywriting?",
-      answer: "SEO (Search Engine Optimization) is very important in copywriting, especially for digital content. It helps ensure that your copy reaches your target audience by making it more visible in search engine results. This involves using relevant keywords, creating quality content, and following SEO best practices.",
-    },
-    {
-      question: "What is a call-to-action (CTA) in copywriting?",
-      answer: "A call-to-action (CTA) is a prompt in your copy that tells the reader what to do next. It's usually a command verb like 'Buy Now,' 'Sign Up,' or 'Learn More.' An effective CTA is clear, compelling, and creates a sense of urgency.",
+      question: "¿Atienden en toda Hispanoamérica?",
+      answer:
+        "Sí, trabajamos con empresas de todos los países de habla hispana.",
     },
   ],
 };
@@ -101,8 +62,8 @@ const faqData = {
 export function FAQDemo() {
   return (
     <FAQ
-      title="Frequently Asked Questions"
-      subtitle="Let's answer some questions"
+      title="Preguntas frecuentes"
+      subtitle="Te ayudamos a decidir con claridad"
       categories={categories}
       faqData={faqData}
     />

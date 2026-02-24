@@ -4,14 +4,14 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 export function ContainerScrollDemo() {
   return (
     <div className="flex flex-col overflow-hidden">
-      <div className="max-w-7xl mx-auto px-8 md:px-16 w-full">
+      <div className="suda-boxed w-full px-0">
         <ContainerScroll
           titleComponent={
             <>
               <h1 className="text-4xl font-semibold text-black dark:text-white">
-                Unleash the power of <br />
-                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
-                  Scroll Animations
+                Automatización para empresas de habla hispana <br />
+                <span className="mt-1 text-4xl font-bold leading-none text-accent md:text-[5rem]">
+                  Escala sin complicarte
                 </span>
               </h1>
             </>

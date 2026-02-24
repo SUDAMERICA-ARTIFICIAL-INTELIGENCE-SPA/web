@@ -4,58 +4,57 @@ import {
 } from "@/components/ui/animated-glassy-pricing";
 import { InteractiveNebulaShader } from "@/components/ui/liquid-shader";
 
+const WHATSAPP_URL =
+  "https://wa.me/56942201780?text=Hola%20Sudam%C3%A9ria%20AI%2C%20quiero%20una%20propuesta%20a%20medida";
+
 const plans: PricingCardProps[] = [
   {
-    planName: "Free",
-    description: "Get started at no cost.",
-    price: "0",
-    features: ["Up to 3 projects", "Basic analytics", "Community support"],
-    buttonText: "Get Started",
+    planName: "Esencial",
+    description: "Automatización inicial para negocios en crecimiento.",
+    price: "29.990 CLP",
+    periodLabel: "mensual",
+    features: ["Soporte en español", "Onboarding guiado", "Flujos clave listos"],
+    buttonText: "Comenzar ahora",
     buttonVariant: "secondary",
+    buttonHref: WHATSAPP_URL,
   },
   {
-    planName: "Pro",
-    description: "For growing teams.",
-    price: "29",
-    features: [
-      "Unlimited projects",
-      "Advanced analytics",
-      "Priority support",
-      "Custom integrations",
-    ],
-    buttonText: "Start Free Trial",
+    planName: "Profesional",
+    description: "Mayor alcance para ventas, operaciones y servicio al cliente.",
+    price: "79.990 CLP",
+    periodLabel: "mensual",
+    features: ["CRM + ERP", "Integraciones", "Acompañamiento continuo"],
+    buttonText: "Solicitar demo",
     isPopular: true,
     buttonVariant: "primary",
+    buttonHref: WHATSAPP_URL,
   },
   {
-    planName: "Enterprise",
-    description: "For large organizations.",
-    price: "99",
-    features: [
-      "Everything in Pro",
-      "SSO & SAML",
-      "Dedicated account manager",
-      "SLA guarantee",
-    ],
-    buttonText: "Contact Sales",
+    planName: "A Medida",
+    description: "Diseño e implementación según tus procesos e industria.",
+    price: "Cotizar",
+    periodLabel: "",
+    features: ["Implementación local", "Capacitación", "Arquitectura personalizada"],
+    buttonText: "Cotizar por WhatsApp",
     buttonVariant: "secondary",
+    buttonHref: WHATSAPP_URL,
   },
 ];
 
 export default function PricingSection() {
   return (
-    <div className="relative text-foreground min-h-screen w-full overflow-x-hidden">
+    <div className="relative min-h-screen w-full overflow-x-hidden rounded-2xl border border-white/10">
       <InteractiveNebulaShader disableCenterDimming className="z-0" />
-      <main className="relative z-10 w-full min-h-screen flex flex-col items-center justify-center px-4 py-8">
-        <div className="w-full max-w-5xl mx-auto text-center mb-14">
-          <h1 className="text-[48px] md:text-[64px] font-extralight leading-tight tracking-[-0.03em] bg-clip-text text-transparent bg-gradient-to-r from-white via-cyan-300 to-blue-400 font-display">
-            Simple, transparent pricing
-          </h1>
-          <p className="mt-3 text-[16px] md:text-[20px] text-foreground/80 max-w-2xl mx-auto font-sans">
-            No hidden fees. Cancel anytime.
+      <main className="relative z-10 flex min-h-screen w-full flex-col items-center justify-center px-4 py-8">
+        <div className="mx-auto mb-14 w-full max-w-5xl text-center">
+          <h2 className="bg-gradient-to-r from-foreground via-accent to-primary bg-clip-text text-[38px] font-extralight leading-tight tracking-[-0.03em] text-transparent md:text-[56px]">
+            Elige cómo quieres crecer con IA
+          </h2>
+          <p className="mx-auto mt-3 max-w-2xl text-[16px] text-muted-foreground md:text-[20px]">
+            Sin costos ocultos, sin fricción técnica y con garantía de reembolso.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row gap-8 md:gap-6 justify-center items-center w-full max-w-4xl">
+        <div className="flex w-full max-w-5xl flex-col items-center justify-center gap-8 md:flex-row md:gap-6">
           {plans.map((plan) => (
             <PricingCard key={plan.planName} {...plan} />
           ))}
