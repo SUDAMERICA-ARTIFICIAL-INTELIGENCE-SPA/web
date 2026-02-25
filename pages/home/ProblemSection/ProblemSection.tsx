@@ -1,35 +1,34 @@
-import { Typewriter } from "@/components/ui/typewriter";
-import { Features } from "@/components/blocks/features-8";
+import { Typewriter } from "@/components/ui/typewriter"
+import { Features } from "@/components/blocks/features-8"
 
 export default function ProblemSection() {
-  return (
-    <section className="bg-transparent py-16 px-4 md:px-6">
-      <div className="mx-auto mb-12 max-w-4xl text-center">
-        <p className="mb-4 text-sm font-medium uppercase tracking-[0.2em] text-accent">
-          El problema oculto
-        </p>
-        <h2 className="mb-4 min-h-[4rem] text-3xl font-bold text-foreground md:text-5xl">
-          <Typewriter
-            text={[
-              "Tu negocio funciona… pero deja dinero en la mesa.",
-              "Procesos manuales te quitan horas hombre todos los días.",
-              "Atención lenta y tareas repetitivas frenan tu crecimiento.",
-              "Sin automatización, cada mes pierdes eficiencia e ingresos.",
-            ]}
-            speed={60}
-            waitTime={2200}
-            loop={true}
-            className="text-foreground"
-          />
-        </h2>
-        <p className="mx-auto max-w-2xl text-base text-muted-foreground md:text-lg">
-          Sudaméria AI identifica cuellos de botella y los convierte en flujos
-          automáticos para que vendas más y operes mejor sin complicarte con
-          tecnología.
-        </p>
-      </div>
+    return (
+        <section className="bg-white dark:bg-black py-16 px-6">
+            <div className="max-w-4xl mx-auto text-center mb-12">
+                <p className="text-sm uppercase tracking-widest text-gray-400 mb-4 font-medium">
+                    The Problem
+                </p>
+                <h2 className="text-4xl md:text-6xl font-bold text-black dark:text-white mb-4 min-h-[4rem]">
+                    <Typewriter
+                        text={[
+                            "Too many tools, not enough focus.",
+                            "Inefficient communication silos.",
+                            "Complex setups that slow you down.",
+                            "Fragmented workflows kill productivity.",
+                        ]}
+                        speed={60}
+                        waitTime={2200}
+                        loop={true}
+                        className="text-black dark:text-white"
+                    />
+                </h2>
+                <p className="text-lg text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">
+                    Modern teams struggle with scattered tools and broken processes.
+                    We eliminate the friction so you can focus on what matters.
+                </p>
+            </div>
 
-      <Features />
-    </section>
-  );
+            <Features />
+        </section>
+    )
 }

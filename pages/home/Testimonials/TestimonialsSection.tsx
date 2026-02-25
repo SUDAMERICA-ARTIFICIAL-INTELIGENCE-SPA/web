@@ -3,35 +3,35 @@ import { TestimonialsSection } from "@/components/blocks/testimonials-with-marqu
 const testimonials = [
     {
         author: { name: "Ana López", handle: "@analopez", avatar: "https://i.pravatar.cc/150?img=1" },
-        text: "Automatizamos tareas repetitivas y mejoramos nuestra respuesta al cliente en días.",
+        text: "This product completely transformed how our team works. Highly recommended.",
     },
     {
         author: { name: "Carlos M.", handle: "@carlosm", avatar: "https://i.pravatar.cc/150?img=2" },
-        text: "La inversión se pagó sola el primer mes gracias al ahorro operativo.",
+        text: "Best investment we've made. The UX is flawless and the support is incredible.",
     },
     {
         author: { name: "Sara K.", handle: "@saraK", avatar: "https://i.pravatar.cc/150?img=3" },
-        text: "Reducimos tiempos de onboarding y aumentamos la tasa de cierre comercial.",
+        text: "We cut our onboarding time in half. Our clients are impressed every single time.",
     },
     {
         author: { name: "David R.", handle: "@davidr", avatar: "https://i.pravatar.cc/150?img=4" },
-        text: "La automatización nos devolvió cientos de horas al mes.",
+        text: "Incredible product. The automation alone has saved us hundreds of hours a month.",
     },
     {
         author: { name: "Mia Chen", handle: "@miachen", avatar: "https://i.pravatar.cc/150?img=5" },
-        text: "No sabía de tecnología, pero el equipo nos acompañó de principio a fin.",
+        text: "I was skeptical at first but now I can't imagine working without it. Simply brilliant.",
     },
     {
         author: { name: "Lucas B.", handle: "@lucasb", avatar: "https://i.pravatar.cc/150?img=6" },
-        text: "Nuestra productividad subió de forma visible sin contratar más personal.",
+        text: "Game-changing. Our team's productivity increased by 40% in the first month.",
     },
 ]
 
 export default function Testimonials() {
     return (
         <TestimonialsSection
-            title="Empresas que ya dieron el salto"
-            description="Testimonios de clientes que hoy venden más y operan mejor."
+            title="Equipos que confían en Sudaméria AI"
+            description="Conoce la experiencia de quienes ya automatizan su negocio."
             testimonials={testimonials}
         />
     )

@@ -25,7 +25,7 @@ export default function RotatingGradientRight() {
           <Card className="w-[340px] z-10 rounded-2xl border border-white/10 bg-black/85 shadow-2xl backdrop-blur-xl">
             <CardContent className="p-5">
               <div className="mb-3 flex items-center justify-between">
-                <span className="text-sm font-medium">Ruixen UI</span>
+                <span className="text-sm font-medium">Sudaméria AI</span>
                 <span className="text-xs text-zinc-400">99 / 99</span>
               </div>
 
@@ -38,31 +38,29 @@ export default function RotatingGradientRight() {
               </div>
 
               <p className="text-xs text-zinc-400">
-                Building components… please keep the project open until the
-                process is complete.
+                Configurando automatizaciones... mantén esta sesión abierta hasta completar el proceso.
               </p>
 
               <Button
                 variant="secondary"
                 className="mt-4 w-full rounded-lg bg-zinc-800 text-zinc-100 hover:bg-zinc-700"
               >
-                Cancel
+                Cancelar
               </Button>
             </CardContent>
           </Card>
         </div>
 
-        {/* RIGHT: Rotating gradient with black card */}
+        {/* RIGHT: Rotating gradient con black card */}
         <div className="space-y-4">
           <h2 className="text-lg sm:text-xl lg:text-3xl font-normal text-gray-900 dark:text-white leading-relaxed">
-            Ruixen UI{" "}
+            Sudaméria AI{" "}
             <span className="text-gray-500 dark:text-gray-400 text-sm sm:text-base lg:text-3xl">
-              Build beautiful, modern interfaces with our comprehensive
-              component library. No setup, no configuration needed.
+              Automatiza ventas, soporte y operación con una implementación simple y guiada.
             </span>
           </h2>
           <Button variant="link" className="px-0 text-black dark:text-white">
-            Try Ruixen UI <ArrowRight />
+            Probar Sudaméria AI <ArrowRight />
           </Button>
         </div>
       </div>

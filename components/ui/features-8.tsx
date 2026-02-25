@@ -3,10 +3,10 @@ import { Shield } from "lucide-react";
 
 export function Features() {
   return (
-    <section className="bg-transparent py-16 md:py-24">
-      <div className="suda-boxed px-0">
+    <section className="bg-gray-50 py-16 md:py-32 dark:bg-transparent">
+      <div className="max-w-7xl mx-auto px-8 md:px-16">
         <div className="relative z-10 grid grid-cols-6 gap-3">
-          {/* 100% Totalmente adaptable */}
+          {/* 100% Adaptable */}
           <Card className="relative col-span-full flex overflow-hidden lg:col-span-2">
             <CardContent className="relative m-auto size-fit pt-6">
               <div className="relative flex h-24 w-56 items-center">
@@ -26,12 +26,12 @@ export function Features() {
                 </span>
               </div>
               <h2 className="mt-6 text-center text-3xl font-semibold">
-                Totalmente adaptable
+                Adaptable
               </h2>
             </CardContent>
           </Card>
 
-          {/* Seguridad desde el primer día */}
+          {/* Seguridad desde el inicio */}
           <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
             <CardContent className="pt-6">
               <div className="relative mx-auto flex aspect-square size-32 rounded-full border before:absolute before:-inset-2 before:rounded-full before:border dark:border-white/10 dark:before:border-white/5">
@@ -57,16 +57,17 @@ export function Features() {
               </div>
               <div className="relative z-10 mt-6 space-y-2 text-center">
                 <h2 className="text-lg font-medium transition dark:text-white">
-                  Seguridad desde el primer día
+                  Seguridad desde el inicio
                 </h2>
                 <p className="text-foreground text-sm">
-                  Protección empresarial sin complejidad técnica para tu equipo y tus clientes.
+                  Enterprise-grade security built in from day one. Your data
+                  stays protected.
                 </p>
               </div>
             </CardContent>
           </Card>
 
-          {/* Implementación rápida y estable */}
+          {/* Implementación ágil */}
           <Card className="relative col-span-full overflow-hidden sm:col-span-3 lg:col-span-2">
             <CardContent className="pt-6">
               <div className="pt-6 lg:px-6">
@@ -114,10 +115,11 @@ export function Features() {
               </div>
               <div className="relative z-10 mt-14 space-y-2 text-center">
                 <h2 className="text-lg font-medium transition">
-                  Implementación rápida y estable
+                  Implementación ágil
                 </h2>
                 <p className="text-foreground text-sm">
-                  Automatizaciones que responden en segundos, listas para escalar contigo.
+                  Real-time performance con zero compromises. Built for speed
+                  at every layer.
                 </p>
               </div>
             </CardContent>
@@ -132,10 +134,11 @@ export function Features() {
                 </div>
                 <div className="space-y-2">
                   <h2 className="text-lg font-medium text-zinc-800 transition dark:text-white">
-                    Operación siempre protegida
+                    Siempre protegido
                   </h2>
                   <p className="text-foreground text-sm">
-                    Control, trazabilidad y seguridad para tus procesos críticos.
+                    End-to-end encryption and compliance tools keep your
+                    workflows safe at scale.
                   </p>
                 </div>
               </div>
@@ -171,7 +174,7 @@ export function Features() {
               <div className="text-center space-y-2">
                 <p className="text-6xl font-black text-primary">250+</p>
                 <p className="text-muted-foreground text-sm">
-                  integraciones posibles
+                  integraciones disponibles
                 </p>
               </div>
               <div className="mt-8 grid grid-cols-3 gap-3 text-center text-sm">
@@ -181,11 +184,11 @@ export function Features() {
                 </div>
                 <div className="rounded-lg border p-3 dark:border-white/10">
                   <p className="font-semibold">&lt; 50ms</p>
-                  <p className="text-muted-foreground text-xs">Latencia media</p>
+                  <p className="text-muted-foreground text-xs">Latencia</p>
                 </div>
                 <div className="rounded-lg border p-3 dark:border-white/10">
                   <p className="font-semibold">SOC 2</p>
-                  <p className="text-muted-foreground text-xs">Cumplimiento</p>
+                  <p className="text-muted-foreground text-xs">Certificado</p>
                 </div>
               </div>
             </CardContent>

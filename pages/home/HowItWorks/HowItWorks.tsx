@@ -1,17 +1,17 @@
 import RotatingGradientRight from "@/components/ui/rotating-gradient-right"
 
 const steps = [
-  { number: "01", title: "Conecta tus herramientas", desc: "Integra tu operación actual en minutos." },
-  { number: "02", title: "Automatiza flujos clave", desc: "Activa automatizaciones inteligentes sin código." },
-  { number: "03", title: "Escala con acompañamiento", desc: "Tu equipo recibe soporte en español durante todo el proceso." },
+  { number: "01", title: "Connect your tools", desc: "Integrate with your existing stack in minutes." },
+  { number: "02", title: "Automate workflows", desc: "Set up smart automations without writing code." },
+  { number: "03", title: "Collaborate in real-time", desc: "Your team works together on a single source of truth." },
 ]
 
 export default function HowItWorks() {
   return (
-    <section className="relative py-24 px-6 bg-transparent text-foreground overflow-hidden">
+    <section className="relative py-24 px-6 bg-black text-white overflow-hidden">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4">Cómo funciona</h2>
-        <p className="text-gray-400 text-center mb-16 text-lg">Tres pasos para empezar a ganar eficiencia.</p>
+        <h2 className="text-4xl font-bold text-center mb-4">How It Works</h2>
+        <p className="text-gray-400 text-center mb-16 text-lg">Get productive in three simple steps.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step) => (
             <div key={step.number} className="flex flex-col gap-3 p-6 rounded-2xl border border-white/10 bg-white/5">

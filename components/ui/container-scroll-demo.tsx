@@ -4,14 +4,14 @@ import { ContainerScroll } from "@/components/ui/container-scroll-animation";
 export function ContainerScrollDemo() {
   return (
     <div className="flex flex-col overflow-hidden">
-      <div className="suda-boxed w-full px-0">
+      <div className="max-w-7xl mx-auto px-8 md:px-16 w-full">
         <ContainerScroll
           titleComponent={
             <>
               <h1 className="text-4xl font-semibold text-black dark:text-white">
-                Automatización para empresas de habla hispana <br />
-                <span className="mt-1 text-4xl font-bold leading-none text-accent md:text-[5rem]">
-                  Escala sin complicarte
+                Impulsa tu negocio con <br />
+                <span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none">
+                  automatización inteligente
                 </span>
               </h1>
             </>

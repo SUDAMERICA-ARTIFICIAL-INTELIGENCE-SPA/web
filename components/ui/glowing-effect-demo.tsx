@@ -4,26 +4,26 @@ import { cn } from "@/lib/utils";
 
 export function GlowingEffectDemo() {
   return (
-    <section className="bg-transparent py-16">
-      <div className="suda-boxed px-0">
+    <section className="bg-background py-16">
+      <div className="max-w-7xl mx-auto px-8 md:px-16">
         <ul className="grid grid-cols-1 grid-rows-none gap-4 md:grid-cols-12 md:grid-rows-3 lg:gap-4 xl:max-h-[34rem] xl:grid-rows-2">
           <GridItem
             area="md:[grid-area:1/1/2/7] xl:[grid-area:1/1/2/5]"
             icon={<Box className="h-4 w-4" />}
             title="Automatiza lo repetitivo"
-            description="Reduce horas hombre y elimina errores manuales."
+            description="Ahorra horas hombre y reduce errores operativos."
           />
           <GridItem
             area="md:[grid-area:1/7/2/13] xl:[grid-area:2/1/3/5]"
             icon={<Settings className="h-4 w-4" />}
-            title="CRM + ERP + IA en un solo flujo"
-            description="Conecta ventas, soporte y operaciones sin fricción."
+            title="CRM y ERP asistidos por IA"
+            description="Conecta áreas clave sin requerir equipo técnico especializado."
           />
           <GridItem
             area="md:[grid-area:2/1/3/7] xl:[grid-area:1/5/3/8]"
             icon={<Lock className="h-4 w-4" />}
             title="Atención al cliente 24/7"
-            description="Agentes de IA que responden en español y convierten más."
+            description="Responde más rápido y mejora conversión en cada contacto."
           />
           <GridItem
             area="md:[grid-area:2/7/3/13] xl:[grid-area:1/8/2/13]"
@@ -34,8 +34,8 @@ export function GlowingEffectDemo() {
           <GridItem
             area="md:[grid-area:3/1/4/13] xl:[grid-area:2/8/3/13]"
             icon={<Search className="h-4 w-4" />}
-            title="Implementación guiada"
-            description="Te acompañamos desde la configuración hasta la optimización."
+            title="Soporte en español"
+            description="Acompañamiento continuo para implementar y escalar."
           />
         </ul>
       </div>

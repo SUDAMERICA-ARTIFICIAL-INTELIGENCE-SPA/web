@@ -31,7 +31,7 @@ type AnimatedCarouselProps = {
 };
 
 export const AnimatedCarousel = ({
-  title = "Trusted by thousands of businesses worldwide",
+  title = "Empresas que confían en nosotros",
   logoCount = 15,
   autoPlay = true,
   autoPlayInterval = 1000,

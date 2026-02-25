@@ -6,12 +6,12 @@ export function TextColor() {
     <div>
       <div className="mb-10 mt-4 md:mt-6">
         <div className="px-2">
-          <div className="relative h-full w-full border border-white/10 bg-card/40 p-8 [mask-image:radial-gradient(200rem_24rem_at_center,white,transparent)]">
-            <h1 className="flex select-none flex-col px-3 py-2 text-center text-5xl font-extrabold leading-none tracking-tighter sm:text-7xl md:flex-col lg:flex-row lg:justify-center">
-              <Plus className="absolute -left-4 -top-4 h-8 w-8 text-accent" />
-              <Plus className="absolute -bottom-4 -left-4 h-8 w-8 text-accent" />
-              <Plus className="absolute -right-4 -top-4 h-8 w-8 text-accent" />
-              <Plus className="absolute -bottom-4 -right-4 h-8 w-8 text-accent" />
+          <div className="relative p-8 w-full h-full border border-slate-200 dark:border-slate-800 [mask-image:radial-gradient(200rem_24rem_at_center,white,transparent)]">
+            <h1 className="tracking-tighter flex select-none px-3 py-2 flex-col text-center text-7xl font-extrabold leading-none sm:text-8xl md:flex-col lg:flex-row">
+              <Plus className="absolute -left-4 -top-4 h-8 w-8 text-indigo-500" />
+              <Plus className="absolute -bottom-4 -left-4 h-8 w-8 text-indigo-500" />
+              <Plus className="absolute -right-4 -top-4 h-8 w-8 text-indigo-500" />
+              <Plus className="absolute -bottom-4 -right-4 h-8 w-8 text-indigo-500" />
 
               <span
                 data-content="Automatiza."
