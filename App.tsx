@@ -12,17 +12,17 @@ import "./index.css";
 
 function App() {
   return (
-    <main className="dark bg-black text-white min-h-screen">
-      <DottedHero />
-      <IntegrationHero />
-      <RotatingGradientRight />
-      <Features />
-      <GlowingEffectDemo />
-      <ContainerScrollDemo />
-      <TestimonialsDemo />
-      <PricingDemo />
-      <FAQDemo />
-      <TypewriterEffectDemo />
+    <main className="dark min-h-screen bg-background text-foreground py-6 md:py-10 space-y-6 md:space-y-8">
+      <section className="site-width"><DottedHero /></section>
+      <section className="site-width"><IntegrationHero /></section>
+      <section className="site-width"><RotatingGradientRight /></section>
+      <section className="site-width"><Features /></section>
+      <section className="site-width"><GlowingEffectDemo /></section>
+      <section className="site-width"><ContainerScrollDemo /></section>
+      <section className="site-width"><TestimonialsDemo /></section>
+      <section className="site-width"><PricingDemo /></section>
+      <section className="site-width"><FAQDemo /></section>
+      <section className="site-width"><TypewriterEffectDemo /></section>
     </main>
   );
 }

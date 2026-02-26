@@ -3,53 +3,38 @@ import { TestimonialsSection } from "@/components/blocks/testimonials-with-marqu
 const testimonials = [
   {
     author: {
-      name: "Emma Thompson",
-      handle: "@emmaai",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
+      name: "Carla Rojas",
+      handle: "@carla.negocios",
+      avatar:
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
     },
-    text: "Using this AI platform has transformed how we handle data analysis. The speed and accuracy are unprecedented.",
-    href: "https://twitter.com/emmaai",
+    text: "Automatizamos la atención y ahora respondemos en minutos, no en horas.",
   },
   {
     author: {
-      name: "David Park",
-      handle: "@davidtech",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+      name: "Diego Méndez",
+      handle: "@diegopymes",
+      avatar:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
     },
-    text: "The API integration is flawless. We've reduced our development time by 60% since implementing this solution.",
-    href: "https://twitter.com/davidtech",
+    text: "Reducimos tareas repetitivas y el equipo se enfocó en vender más.",
   },
   {
     author: {
-      name: "Sofia Rodriguez",
-      handle: "@sofiaml",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
+      name: "Sofía León",
+      handle: "@sofiaadmin",
+      avatar:
+        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
     },
-    text: "Finally, an AI tool that actually understands context! The accuracy in natural language processing is impressive.",
-  },
-  {
-    author: {
-      name: "James Chen",
-      handle: "@jamesdev",
-      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face",
-    },
-    text: "Incredible performance gains. Our pipeline runs 3x faster and the developer experience is second to none.",
-  },
-  {
-    author: {
-      name: "Aisha Patel",
-      handle: "@aishacodes",
-      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face",
-    },
-    text: "The documentation is outstanding and the support team responds within hours. Best investment we made this year.",
+    text: "La implementación fue simple y el soporte en español marcó la diferencia.",
   },
 ];
 
 export function TestimonialsDemo() {
   return (
     <TestimonialsSection
-      title="Trusted by developers worldwide"
-      description="Join thousands of developers who are already building the future with our AI platform"
+      title="Empresas que confían en Sudaméria AI"
+      description="Resultados reales en negocios que decidieron automatizar"
       testimonials={testimonials}
     />
   );

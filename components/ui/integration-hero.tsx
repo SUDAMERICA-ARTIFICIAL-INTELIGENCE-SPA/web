@@ -43,7 +43,7 @@ export default function IntegrationHero() {
       {/* Animated logo carousel */}
       <div className="relative">
         <AnimatedCarousel
-          title="Powering the Web"
+          title="Potenciando negocios con IA"
           logos={partnerLogos.map((l) => l.src)}
           autoPlay={true}
           autoPlayInterval={4000}

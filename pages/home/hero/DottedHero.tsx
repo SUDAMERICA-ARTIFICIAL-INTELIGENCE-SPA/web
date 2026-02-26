@@ -24,10 +24,10 @@ export function DottedHero() {
         <TextColor />
         <div className="flex gap-4 justify-center mt-2">
           <button className="px-8 py-3 bg-white text-black rounded-full font-medium transition-all hover:scale-105 active:scale-95">
-            Get Started
+            Comenzar ahora
           </button>
           <button className="px-8 py-3 bg-white/10 hover:bg-white/20 text-white rounded-full font-medium transition-all backdrop-blur-sm border border-white/20">
-            Learn More
+            Saber más
           </button>
         </div>
       </div>

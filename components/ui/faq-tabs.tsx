@@ -20,7 +20,7 @@ interface FAQProps {
 // Main reusable FAQ component
 export const FAQ = ({
   title = "FAQs",
-  subtitle = "Frequently Asked Questions",
+  subtitle = "Preguntas frecuentes",
   categories,
   faqData,
   className,

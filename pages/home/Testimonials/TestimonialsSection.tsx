@@ -30,8 +30,8 @@ const testimonials = [
 export default function Testimonials() {
     return (
         <TestimonialsSection
-            title="Trusted by teams worldwide"
-            description="See what our customers say about their experience."
+            title="Equipos que confían en Sudaméria AI"
+            description="Conoce la experiencia de quienes ya automatizan su negocio."
             testimonials={testimonials}
         />
     )

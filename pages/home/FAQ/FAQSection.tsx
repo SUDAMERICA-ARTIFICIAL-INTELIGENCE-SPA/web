@@ -27,8 +27,8 @@ const faqData = {
 export default function FAQSection() {
     return (
         <FAQ
-            title="Got Questions?"
-            subtitle="Frequently Asked Questions"
+            title="¿Tienes dudas?"
+            subtitle="Preguntas frecuentes"
             categories={categories}
             faqData={faqData}
             className=""

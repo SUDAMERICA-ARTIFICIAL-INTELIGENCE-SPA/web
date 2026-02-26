@@ -6,55 +6,44 @@ import { InteractiveNebulaShader } from "@/components/ui/liquid-shader";
 
 const plans: PricingCardProps[] = [
   {
-    planName: "Basic",
-    description: "Perfect for personal projects and hobbyists.",
-    price: "0",
-    features: ["1 User", "1GB Storage", "Community Forum"],
-    buttonText: "Get Started",
+    planName: "Esencial",
+    description: "Para negocios que empiezan a automatizar.",
+    price: "29.990 CLP",
+    features: ["Flujos base", "Asistente IA", "Soporte inicial"],
+    buttonText: "Comenzar ahora",
     buttonVariant: "secondary",
   },
   {
-    planName: "Team",
-    description: "Collaborate with your team on multiple projects.",
-    price: "49",
-    features: [
-      "10 Users",
-      "100GB Storage",
-      "Email Support",
-      "Shared Workspaces",
-    ],
-    buttonText: "Choose Team Plan",
+    planName: "Profesional",
+    description: "Para equipos que quieren crecer con procesos inteligentes.",
+    price: "79.990 CLP",
+    features: ["CRM + ERP", "Automatizaciones avanzadas", "Soporte prioritario"],
+    buttonText: "Elegir plan profesional",
     isPopular: true,
     buttonVariant: "primary",
   },
   {
-    planName: "Agency",
-    description: "Manage all your clients under one roof.",
-    price: "149",
-    features: [
-      "Unlimited Users",
-      "1TB Storage",
-      "Dedicated Support",
-      "Client Invoicing",
-    ],
-    buttonText: "Contact Us",
+    planName: "A Medida",
+    description: "Para empresas con integraciones y alcance personalizado.",
+    price: "Cotizar",
+    features: ["Implementación dedicada", "Integraciones a medida", "Acompañamiento experto"],
+    buttonText: "Contactar asesor",
     buttonVariant: "primary",
   },
 ];
 
 export function PricingDemo() {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden rounded-2xl border border-border bg-card/60">
       <InteractiveNebulaShader disableCenterDimming={true} />
-      <div className="relative z-10 max-w-7xl mx-auto px-8 md:px-16">
+      <div className="relative z-10 w-full px-4 md:px-6">
         <ModernPricingPage
           title={
             <>
-              Find the <span className="text-cyan-400">Perfect Plan</span> for
-              Your Business
+              Elige el <span className="text-cyan-400">plan ideal</span> para tu negocio
             </>
           }
-          subtitle="Start for free, then grow with us. Flexible plans for projects of all sizes."
+          subtitle="Planes claros y accesibles para automatizar tus procesos en español."
           plans={plans}
           showAnimatedBackground={false}
         />
